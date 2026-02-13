@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biyokimya II - Bütünleme Sınavı Ders Notları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+        
+        h2 {
+            color: #1e3c72;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        h3 {
+            color: #2a5298;
+            font-size: 1.5em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        
+        h4 {
+            color: #764ba2;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .definition-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #e17055;
+        }
+        
+        .definition-box strong {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #2d3436;
+        }
+        
+        .important-note {
+            background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #0652DD;
+        }
+        
+        .exam-focus {
+            background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #c0392b;
+        }
+        
+        .exam-focus h4 {
+            color: white;
+            margin-top: 0;
+        }
+        
+        ul, ol {
+            margin-left: 25px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+        
+        .reaction-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: 2px solid #dfe6e9;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #dfe6e9;
+        }
+        
+        tr:hover {
+            background: #f1f3f5;
+        }
+        
+        .clinical-example {
+            background: linear-gradient(135deg, #55efc4 0%, #00b894 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 5px solid #00695c;
+        }
+        
+        .clinical-example h4 {
+            color: #004d40;
+            margin-top: 0;
+        }
+        
+        code {
+            background: #2d3436;
+            color: #55efc4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .tip {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-left: 5px solid #ff9800;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .tip::before {
+            content: "💡 İpucu: ";
+            font-weight: bold;
+            color: #e65100;
+        }
+        
+        footer {
+            background: #2d3436;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Biyokimya II - Bütünleme Sınavı</h1>
+            <p>Ders Notları ve Sınav Odaklı Anlatım</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Dr. Ersin Gündeğer</p>
+        </header>
+        
+        <div class="content">
+            <!-- KONU 1: KSENOBİYOTİK METABOLİZMASI -->
+            <div class="section">
+                <h2>1. Ksenobiyotik Metabolizması ve Biyotransformasyon</h2>
+                
+                <div class="definition-box">
+                    <strong>Biyotransformasyon Nedir?</strong>
+                    Biyotransformasyon, vücuda alınan yabancı kimyasal maddelerin (ksenobiyotikler) enzimatik reaksiyonlarla daha polar, suda çözünür ve vücuttan atılabilir formlara dönüştürülmesidir. Bu süreç genellikle karaciğerde gerçekleşir.
+                </div>
+                
+                <h3>1.1. Ksenobiyotik Nedir?</h3>
+                <p>Ksenobiyotikler, vücutta normal metabolizma süreçlerinde bulunmayan, dışarıdan alınan yabancı kimyasal maddelerdir. Örnekler:</p>
+                <ul>
+                    <li><strong>İlaçlar:</strong> Antibiyotikler, analjezikler, vb.</li>
+                    <li><strong>Çevre kirleticileri:</strong> Pestisitler, herbisitler</li>
+                    <li><strong>Gıda katkı maddeleri</strong></li>
+                    <li><strong>Alkol ve sigara bileşenleri</strong></li>
+                    <li><strong>Endüstriyel kimyasallar:</strong> Benzen, toluen, fenol türevleri</li>
+                </ul>
+                
+                <div class="important-note">
+                    <h4>⚠️ Detoksifikasyon (Zehirsizleştirme)</h4>
+                    <p>Detoksifikasyon, ksenobiyotiklerin zararlı etkilerinin azaltılması veya ortadan kaldırılması sürecidir. Biyotransformasyon, detoksifikasyonun temel mekanizmasıdır.</p>
+                </div>
+                
+                <h3>1.2. Faz I Reaksiyonları - Fonksiyonelleştirme</h3>
+                
+                <p>Faz I reaksiyonları, ksenobiyotiklere <strong>fonksiyonel gruplar ekler</strong> (veya açığa çıkarır). Bu gruplar genellikle -OH, -NH₂, -SH veya -COOH gruplarıdır.</p>
+                
+                <h4>Faz I Reaksiyonlarının Ana Tipleri:</h4>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Reaksiyon Tipi</th>
+                            <th>Enzim Sistemi</th>
+                            <th>İşlev</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Oksidasyon</strong></td>
+                            <td>Sitokrom P450 (CYP450)</td>
+                            <td>-OH grubu ekleme, aromatik halka oksidasyonu</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Redüksiyon</strong></td>
+                            <td>NADPH-sitokrom P450 redüktaz</td>
+                            <td>Nitro gruplarının azaltılması</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hidroliz</strong></td>
+                            <td>Esterazlar, amidazlar</td>
+                            <td>Ester ve amid bağlarının kırılması</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="reaction-box">
+                    <strong>Örnek Faz I Reaksiyonu - Aromatik Hidroksillasyon:</strong><br>
+                    Benzen → Fenol (Sitokrom P450 katalizörlüğünde)<br>
+                    C₆H₆ + O₂ + NADPH → C₆H₅OH + H₂O + NADP⁺
+                </div>
+                
+                <div class="tip">
+                    Faz I reaksiyonları her zaman detoksifikasyon sağlamaz! Bazı durumlarda <strong>daha toksik ara ürünler</strong> oluşabilir (örn: benzopren → epoksit). Bu nedenle Faz II reaksiyonları kritik öneme sahiptir.
+                </div>
+                
+                <h3>1.3. Faz II Reaksiyonları - Konjugasyon</h3>
+                
+                <p>Faz II reaksiyonları, Faz I'de eklenen fonksiyonel gruplara <strong>polar moleküller konjuge ederek</strong> maddeyi suda çok daha çözünür hale getirir ve atılımını kolaylaştırır.</p>
+                
+                <h4>Faz II Konjugasyon Tipleri:</h4>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Konjugasyon Tipi</th>
+                            <th>Konjuge Edilen Molekül</th>
+                            <th>Aktif Form</th>
+                            <th>Enzim</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Glukuronidasyonu</strong></td>
+                            <td>Glukuronik asit</td>
+                            <td>UDP-glukuronik asit</td>
+                            <td>UDP-glukuronosiltransferaz (UGT)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sülfatlaşma</strong></td>
+                            <td>Sülfat (SO₃²⁻)</td>
+                            <td>PAPS (3'-fosfoadenosil-5'-fosfosülfat)</td>
+                            <td>Sülfotransferaz</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Glutatyon Konjugasyonu</strong></td>
+                            <td>Glutatyon (GSH)</td>
+                            <td>Glutatyon (γ-Glu-Cys-Gly)</td>
+                            <td>Glutatyon S-transferaz (GST)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Asetilasyon</strong></td>
+                            <td>Asetil grubu</td>
+                            <td>Asetil-CoA</td>
+                            <td>N-asetiltransferaz</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Amino Asit Konjugasyonu</strong></td>
+                            <td>Glisin, Glutamin</td>
+                            <td>Amino asit-CoA</td>
+                            <td>Asil-CoA sentaz + transferaz</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Metilasyon</strong></td>
+                            <td>Metil grubu (-CH₃)</td>
+                            <td>SAM (S-adenozilmetionin)</td>
+                            <td>Metiltransferaz</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>1.4. Amino Asit İçeren Ksenobiyotiklerin Detoksifikasyonu</h3>
+                
+                <div class="exam-focus">
+                    <h4>🎯 SINAV ÖNEMLİ: Amino Asit Konjugasyonu</h4>
+                    <p>Sınavda sorulan konulardan biri! Özellikle <strong>glisin</strong> ve <strong>glutamin</strong> konjugasyonlarını iyi bilin.</p>
+                </div>
+                
+                <h4>Glisin Konjugasyonu:</h4>
+                <p>Aromatik asitler (benzoik asit, salisilk asit gibi) ve alifatik asitler glisinle konjuge olur.</p>
+                
+                <div class="reaction-box">
+                    <strong>Reaksiyon Mekanizması:</strong><br><br>
+                    <strong>1. Adım - Aktivasyon:</strong><br>
+                    Benzoik asit + CoA-SH + ATP → Benzoil-CoA + AMP + PPᵢ<br>
+                    (Enzim: Asil-CoA sentaz/ligaz)<br><br>
+                    
+                    <strong>2. Adım - Konjugasyon:</strong><br>
+                    Benzoil-CoA + Glisin (H₂N-CH₂-COOH) → Hipürik asit (Benzoilglisin) + CoA-SH<br>
+                    (Enzim: Glisin N-asiltransferaz)<br><br>
+                    
+                    <strong>Ürün:</strong> Hipürik asit (N-benzoilglisin) → İdrarla atılır
+                </div>
+                
+                <h4>Glutamin Konjugasyonu:</h4>
+                <p>Özellikle <strong>fenilasetat</strong> gibi bileşikler glutamin ile konjuge olur.</p>
+                
+                <div class="reaction-box">
+                    <strong>Fenilasetat Detoksifikasyonu:</strong><br><br>
+                    <strong>1. Adım:</strong><br>
+                    Fenilasetat + CoA-SH + ATP → Fenilasetat-CoA + AMP + PPᵢ<br><br>
+                    
+                    <strong>2. Adım:</strong><br>
+                    Fenilasetat-CoA + Glutamin → Fenilasetat-glutamin + CoA-SH<br><br>
+                    
+                    <strong>Ürün:</strong> Fenilasetatglutamin → İdrarla atılır
+                </div>
+                
+                <div class="clinical-example">
+                    <h4>🏥 Klinik Örnek: Benzoik Asit Detoksifikasyonu</h4>
+                    <p><strong>Salisillik asit</strong> (aspirin metaboliti) vücutta glisin ile konjuge edilerek salisilürik aside dönüşür ve idrarla atılır. Bu mekanizma sayesinde yüksek doz aspirin alımında dahi vücut ilaç artıklarından arınabilir.</p>
+                </div>
+                
+                <h3>1.5. Fenollü Ksenobiyotiklerin Detoksifikasyonu</h3>
+                
+                <div class="exam-focus">
+                    <h4>🎯 SINAV ÖNEMLİ: Fenol Metabolizması</h4>
+                    <p>Bütünlemede doğrudan sorulan konu! Faz I ve Faz II reaksiyonlarını açıklayın.</p>
+                </div>
+                
+                <h4>Faz I: Fenol Oluşumu (Aromatik Hidroksillasyon)</h4>
+                
+                <div class="reaction-box">
+                    <strong>Benzen → Fenol Dönüşümü:</strong><br>
+                    Benzen + O₂ + NADPH + H⁺ → Fenol + H₂O + NADP⁺<br>
+                    (Enzim: Sitokrom P450 - Mikrozomlar)<br><br>
+                    
+                    <strong>Mekanizma:</strong><br>
+                    1. Benzen aromatik halkaya oksijen eklenir<br>
+                    2. Aromatik halka kısmen açılır (epoksit ara ürünü)<br>
+                    3. Epoksit yeniden düzenlenerek fenol oluşur
+                </div>
+                
+                <h4>Faz II: Fenolün Konjugasyonu</h4>
+                
+                <p>Fenol iki ana yolla konjuge edilir:</p>
+                
+                <h4>A) Glukuronidasyonu (Ana Yol):</h4>
+                
+                <div class="reaction-box">
+                    <strong>Fenol + UDP-glukuronik asit → Fenilglukuronid + UDP</strong><br>
+                    (Enzim: UDP-glukuronosiltransferaz)<br><br>
+                    
+                    UDP-glukuronik asit, glukoz metabolizmasından elde edilir:<br>
+                    Glukoz-1-fosfat + UTP → UDP-glukoz<br>
+                    UDP-glukoz + 2 NAD⁺ → UDP-glukuronik asit + 2 NADH
+                </div>
+                
+                <h4>B) Sülfatlaşma (Alternatif Yol):</h4>
+                
+                <div class="reaction-box">
+                    <strong>Fenol + PAPS → Fenilsülfat + PAP</strong><br>
+                    (Enzim: Fenol sülfotransferaz)<br><br>
+                    
+                    PAPS (3'-fosfoadenosil-5'-fosfosülfat) oluşumu:<br>
+                    SO₄²⁻ + ATP → Adenozin-5'-fosfosülfat (APS)<br>
+                    APS + ATP → PAPS (3'-fosfoadenosil-5'-fosfosülfat)
+                </div>
+                
+                <div class="tip">
+                    Fenol glukuronidasyonu ve sülfatlaşması <strong>rekabet halindedir</strong>. Düşük fenol konsantrasyonlarında sülfatlaşma, yüksek konsantrasyonlarda glukuronidasyonu baskındır. Bunun nedeni sülfat transferazın daha yüksek afinitesi ancak düşük kapasitesidir.
+                </div>
+                
+                <h3>1.6. Glutatyon (GSH) Konjugasyonu</h3>
+                
+                <p>Glutatyon (γ-Glu-Cys-Gly), hücrenin en önemli antioksidan ve detoksifikasyon molekülüdür.</p>
+                
+                <h4>Glutatyon'un Fonksiyonları:</h4>
+                <ol>
+                    <li><strong>Antioksidan koruma:</strong> Serbest radikalleri nötralize eder</li>
+                    <li><strong>Ksenobiyotik detoksifikasyonu:</strong> Elektrofilik bileşiklerle konjugasyon</li>
+                    <li><strong>Redoks homeostazı:</strong> GSH ↔ GSSG dengesi</li>
+                </ol>
+                
+                <div class="reaction-box">
+                    <strong>Glutatyon Konjugasyonu:</strong><br><br>
+                    Ksenobiyotik (R-X) + GSH → R-S-Glutatyon + HX<br>
+                    (Enzim: Glutatyon S-transferaz - GST)<br><br>
+                    
+                    Ardından:<br>
+                    R-S-Glutatyon → R-S-Sistein-glisin (γ-glutamil transfer)<br>
+                    R-S-Sistein-glisin → R-S-Sistein (glisin ayrılması)<br>
+                    R-S-Sistein → Merkaptürik asit (N-asetilasyon)<br><br>
+                    
+                    <strong>Son ürün:</strong> N-asetil-sistein konjugatı (merkaptürik asit) → İdrarla atılır
+                </div>
+                
+                <div class="clinical-example">
+                    <h4>🏥 Klinik Örnek: Parasetamol Zehirlenmesi</h4>
+                    <p><strong>Parasetamol (asetaminofen)</strong> normal dozlarda glukuronidasyonu ve sülfatlaşma ile detoksifiye edilir. Ancak yüksek dozlarda toksik bir ara ürün olan <strong>N-asetil-p-benzokinon imin (NAPQI)</strong> oluşur.</p>
+                    <p>NAPQI, glutatyon ile konjuge edilir. Glutatyon tükendiğinde NAPQI hepatositlere zarar verir → karaciğer nekrozu.</p>
+                    <p><strong>Tedavi:</strong> N-asetilsistein (NAC) verilerek glutatyon prekürsörü sağlanır ve detoksifikasyon desteklenir.</p>
+                </div>
+                
+                <h3>1.7. Ksenobiyotik Metabolizmasına Etki Eden Faktörler</h3>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Faktör</th>
+                            <th>Etkisi</th>
+                            <th>Örnek</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Yaş</strong></td>
+                            <td>Yenidoğan ve yaşlılarda ↓ metabolizma</td>
+                            <td>Bebeklerde glukuronidasyonu immatur</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Genetik polimorfizm</strong></td>
+                            <td>Enzim aktivitesinde bireysel farklılıklar</td>
+                            <td>CYP2D6 varyantları (hızlı/yavaş metabolize ediciler)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>İndüksiyon</strong></td>
+                            <td>Enzim sentezinde ↑ → hızlı metabolizma</td>
+                            <td>Fenobarbital CYP450'yi indükler</td>
+                        </tr>
+                        <tr>
+                            <td><strong>İnhibisyon</strong></td>
+                            <td>Enzim aktivitesinde ↓ → yavaş metabolizma</td>
+                            <td>Greyfurt suyu CYP3A4'ü inhibe eder</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Beslenme durumu</strong></td>
+                            <td>Protein eksikliğinde ↓ enzim sentezi</td>
+                            <td>Malnütrisyonda GSH azalır</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hastalık durumu</strong></td>
+                            <td>Karaciğer/böbrek hastalığında ↓ atılım</td>
+                            <td>Siroz'da ilaç birikimi</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            
+            <!-- KONU 2: PROTEİN YAPISI -->
+            <div class="section">
+                <h2>2. Protein Yapısı</h2>
+                
+                <div class="definition-box">
+                    <strong>Protein Nedir?</strong>
+                    Proteinler, amino asitlerin peptit bağları ile birbirlerine bağlanmasıyla oluşan, karmaşık üç boyutlu yapıya sahip makromoleküllerdir. Vücuttaki tüm fonksiyonların (enzim, yapısal destek, taşıma, sinyal iletimi, vb.) temelini oluştururlar.
+                </div>
+                
+                <h3>2.1. Protein Yapı Seviyeleri</h3>
+                
+                <p>Proteinlerin yapısal organizasyonu dört hiyerarşik seviyede incelenir:</p>
+                
+                <h4>A) Primer Yapı (1° Yapı)</h4>
+                
+                <div class="important-note">
+                    <h4>Primer Yapı = Amino Asit Dizisi</h4>
+                    <p>Polipeptit zincirindeki amino asitlerin <strong>lineer sıralaması</strong>dır. Peptit bağları (-CO-NH-) ile birbirine bağlıdır.</p>
+                    <p><strong>Örnek:</strong> İnsulin A zinciri: Gly-Ile-Val-Glu-Gln-Cys-Cys-...</p>
+                </div>
+                
+                <ul>
+                    <li><strong>Peptit bağı:</strong> Bir amino asitin karboksil grubu (-COOH) ile diğerinin amino grubu (-NH₂) arasında kondenzasyon ile oluşur</li>
+                    <li>Primer yapı, proteinin <strong>tüm özelliklerini belirler</strong></li>
+                    <li>Tek bir amino asit değişimi → fonksiyon kaybı (örn: orak hücreli anemi'de HbA → HbS)</li>
+                </ul>
+                
+                <div class="reaction-box">
+                    <strong>Peptit Bağı Oluşumu:</strong><br>
+                    H₂N-CH(R₁)-COOH + H₂N-CH(R₂)-COOH → H₂N-CH(R₁)-CO-NH-CH(R₂)-COOH + H₂O<br>
+                    (Amino asit 1) + (Amino asit 2) → Dipeptit + Su
+                </div>
+                
+                <h4>B) Sekonder Yapı (2° Yapı)</h4>
+                
+                <div class="important-note">
+                    <h4>Sekonder Yapı = Lokal Katlanma</h4>
+                    <p>Polipeptit zincirinin belirli bölgelerindeki <strong>düzenli, tekrarlayan konformasyonlar</strong>dır. Hidrojen bağları ile stabilize edilir.</p>
+                </div>
+                
+                <p><strong>İki Ana Tip Sekonder Yapı:</strong></p>
+                
+                <h4>1) α-Heliks (Alfa Sarmal):</h4>
+                <ul>
+                    <li>Sağa sarmal yapı (saat yönünün tersi)</li>
+                    <li>Her 3.6 amino asitte bir tam tur</li>
+                    <li><strong>Hidrojen bağları:</strong> n. amino asitin C=O grubu ile (n+4). amino asitin N-H grubu arasında</li>
+                    <li>R grupları sarmalın dışına doğru uzanır</li>
+                    <li><strong>Örnekler:</strong> Miyoglobin, hemoglobin, keratin</li>
+                    <li>Prolin ve glisin α-heliksi <strong>bozar</strong> (prolin halka yapısı nedeniyle, glisin esneklik sağlar)</li>
+                </ul>
+                
+                <h4>2) β-Pleated Sheet (Beta Katlı Tabaka):</h4>
+                <ul>
+                    <li>Polipeptit zincirleri yan yana dizilir</li>
+                    <li><strong>Paralel β-sheet:</strong> Zincirler aynı yönde (N→C)</li>
+                    <li><strong>Antiparalel β-sheet:</strong> Zincirler ters yönde (daha stabil)</li>
+                    <li><strong>Hidrojen bağları:</strong> Komşu zincirler arasında C=O ↔ H-N</li>
+                    <li>R grupları tabakanın üst ve alt yüzeyine uzanır</li>
+                    <li><strong>Örnekler:</strong> İpek fibroin, immünoglobulinler</li>
+                </ul>
+                
+                <h4>3) Diğer Sekonder Yapılar:</h4>
+                <ul>
+                    <li><strong>β-Turn (β-Dönüş):</strong> 4 amino asitlik kısa dönüş bölgeleri</li>
+                    <li><strong>Random coil:</strong> Düzensiz, esnek bölgeler</li>
+                    <li><strong>Loop (İlmek):</strong> Sekonder yapı elementlerini bağlayan bölgeler</li>
+                </ul>
+                
+                <h4>C) Tersiyer Yapı (3° Yapı)</h4>
+                
+                <div class="important-note">
+                    <h4>Tersiyer Yapı = Üç Boyutlu Yapı</h4>
+                    <p>Tüm polipeptit zincirinin <strong>genel üç boyutlu organizasyonu</strong>dur. Proteinin fonksiyonel formu genellikle tersiyer yapıdadır.</p>
+                </div>
+                
+                <p><strong>Tersiyer Yapıyı Stabilize Eden Etkileşimler:</strong></p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Etkileşim Tipi</th>
+                            <th>Açıklama</th>
+                            <th>Güç</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Disülfid bağları (S-S)</strong></td>
+                            <td>İki sistein arasında kovalent bağ</td>
+                            <td>Çok güçlü (kovalent)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hidrojen bağları</strong></td>
+                            <td>Polar R grupları arasında (Ser, Thr, Asn, Gln)</td>
+                            <td>Orta güçte</td>
+                        </tr>
+                        <tr>
+                            <td><strong>İyonik etkileşimler</strong></td>
+                            <td>Yüklü R grupları: (+) Lys, Arg, His ↔ (-) Asp, Glu</td>
+                            <td>Orta-Güçlü</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hidrofobik etkileşimler</strong></td>
+                            <td>Apolar R grupları (Ala, Val, Leu, Ile, Phe) içte toplanır</td>
+                            <td>Güçlü (entropi artışı)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Van der Waals</strong></td>
+                            <td>Atomlar arası zayıf çekim</td>
+                            <td>Zayıf (kümülatif etki)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="tip">
+                    <strong>Hidrofobik etki:</strong> Suda çözünen globüler proteinlerde, hidrofobik amino asitler proteinin <strong>içine</strong> gömülürken, hidrofilik amino asitler <strong>dışta</strong> su ile etkileşime girer. Bu "hidrofobik çekirdek" proteini stabilize eder.
+                </div>
+                
+                <h4>D) Kuaterner Yapı (4° Yapı)</h4>
+                
+                <div class="important-note">
+                    <h4>Kuaterner Yapı = Alt Birim Düzenlemesi</h4>
+                    <p>İki veya daha fazla polipeptit zincirinin (alt birimler/subunit) bir araya gelmesiyle oluşan kompleks yapıdır. Tüm proteinler kuaterner yapıya sahip değildir.</p>
+                </div>
+                
+                <ul>
+                    <li>Alt birimler <strong>non-kovalent etkileşimlerle</strong> (H-bağı, iyonik, hidrofobik) birbirine bağlıdır</li>
+                    <li><strong>Homodimer:</strong> Aynı alt birimler (örn: laktat dehidrogenaz)</li>
+                    <li><strong>Heterodimer:</strong> Farklı alt birimler (örn: hemoglobin: 2α + 2β)</li>
+                </ul>
+                
+                <div class="clinical-example">
+                    <h4>🏥 Klinik Örnek: Hemoglobin (Kuaterner Yapı)</h4>
+                    <p><strong>Hemoglobin</strong> (HbA) = 2 α-zincir + 2 β-zincir (her zincirde bir hem grubu)</p>
+                    <p><strong>Allosterik özellik:</strong> Bir alt birime O₂ bağlanması diğer alt birimlerin affinitesini artırır (kooperatif bağlanma).</p>
+                    <p><strong>Orak hücreli anemi:</strong> β-zincirde Glu → Val değişimi → HbS oluşumu → agregasyon ve orak şekilli eritrositler.</p>
+                </div>
+                
+                <h3>2.2. Protein Denatürasyonu</h3>
+                
+                <div class="definition-box">
+                    <strong>Denatürasyon:</strong>
+                    Proteinin sekonder, tersiyer veya kuaterner yapısının bozulması ve <strong>biyolojik aktivitesinin kaybedilmesi</strong>dir. Primer yapı (amino asit dizisi) genellikle korunur.
+                </div>
+                
+                <p><strong>Denatürasyon Nedenleri:</strong></p>
+                <ul>
+                    <li><strong>Isı:</strong> Yüksek sıcaklık → hidrojen bağları kopar</li>
+                    <li><strong>pH değişiklikleri:</strong> İyonik etkileşimler bozulur</li>
+                    <li><strong>Organik çözücüler:</strong> Etanol, aseton → hidrofobik etkileşimler bozulur</li>
+                    <li><strong>Ağır metaller:</strong> Hg²⁺, Pb²⁺ → sülfidril gruplarıyla reaksiyona girer</li>
+                    <li><strong>Deterjanlar:</strong> SDS → hidrofobik etkileşimleri parçalar</li>
+                    <li><strong>Üre/guanidin HCl:</strong> Hidrojen bağlarını bozar</li>
+                </ul>
+                
+                <div class="tip">
+                    Bazı proteinler denatürasyondan sonra <strong>renatüre olabilir</strong> (yeniden katlanabilir) - örneğin RNaz. Ancak çoğu protein kalıcı olarak denatüre olur.
+                </div>
+                
+                <h3>2.3. Protein Katlanması (Folding)</h3>
+                
+                <p>Yeni sentezlenen polipeptit zinciri, doğru üç boyutlu yapısına kavuşmak için <strong>katlanma (folding)</strong> sürecinden geçer.</p>
+                
+                <ul>
+                    <li><strong>Spontan katlanma:</strong> Bazı küçük proteinler kendiliğinden katlanır (termodinamik stabilite)</li>
+                    <li><strong>Moleküler şaperonlar:</strong> Hücrede yanlış katlanmayı önleyen ve doğru katlanmayı destekleyen proteinler</li>
+                    <ul>
+                        <li><strong>Hsp70 (Heat shock protein 70):</strong> Yeni sentezlenen zincirlere bağlanır</li>
+                        <li><strong>Hsp60 (GroEL/GroES - E. coli):</strong> "Katlama kafesi" oluşturur</li>
+                        <li><strong>Protein disülfid izomeraz (PDI):</strong> S-S bağlarının doğru oluşumunu sağlar</li>
+                    </ul>
+                </ul>
+                
+                <div class="clinical-example">
+                    <h4>🏥 Klinik Örnek: Protein Yanlış Katlanma Hastalıkları</h4>
+                    <p><strong>Alzheimer hastalığı:</strong> Amiloid-β proteinin yanlış katlanması → plak oluşumu</p>
+                    <p><strong>Parkinson hastalığı:</strong> α-sinüklein agregasyonu</p>
+                    <p><strong>Prion hastalıkları (CJD):</strong> PrPᶜ → PrPˢᶜ (yanlış katlanmış form) dönüşümü → bulaşıcı</p>
+                    <p><strong>Kistik fibrozis:</strong> CFTR proteininin yanlış katlanması → ER'de degradasyon</p>
+                </div>
+                
+            </div>
+            
+            <!-- KONU 3: ENZİM İNHİBİSYONU -->
+            <div class="section">
+                <h2>3. Enzim İnhibisyonu</h2>
+                
+                <div class="definition-box">
+                    <strong>Enzim İnhibisyonu Nedir?</strong>
+                    Enzim aktivitesinin bir inhibitör molekülü tarafından <strong>azaltılması veya tamamen durdurulması</strong>dır. İnhibitörler, enzimin substrat ile etkileşimini, katalitik aktivitesini veya her ikisini birden etkileyebilir.
+                </div>
+                
+                <div class="exam-focus">
+                    <h4>🎯 SINAV ÖNEMLİ: Enzim İnhibisyonu</h4>
+                    <p>30 puan değerinde soru! İnhibisyon tiplerini, mekanizmalarını ve klinik örneklerini iyi bilin. Lineweaver-Burk grafikleri çizebilmelisiniz.</p>
+                </div>
+                
+                <h3>3.1. İnhibisyon Tipleri</h3>
+                
+                <p>Enzim inhibisyonu iki ana kategoriye ayrılır:</p>
+                
+                <h4>A) Geri Dönüşümlü (Reversible) İnhibisyon</h4>
+                <p>İnhibitör enzimle <strong>non-kovalent bağlarla</strong> bağlanır ve bu bağlanma geri dönüşümlüdür. İnhibitör uzaklaştırıldığında enzim aktivitesi geri döner.</p>
+                
+                <h4>B) Geri Dönüşümsüz (Irreversible) İnhibisyon</h4>
+                <p>İnhibitör enzimle <strong>kovalent bağ</strong> yaparak enzimi kalıcı olarak inaktive eder.</p>
+                
+                <h3>3.2. Geri Dönüşümlü İnhibisyon Tipleri</h3>
+                
+                <h4>1) Kompetitif (Yarışmalı) İnhibisyon</h4>
+                
+                <div class="important-note">
+                    <h4>Kompetitif İnhibisyon</h4>
+                    <p>İnhibitör (I), substrat (S) ile <strong>aktif bölge için yarışır</strong>. İnhibitör ve substrat aynı anda enzime bağlanamaz.</p>
+                </div>
+                
+                <p><strong>Karakteristik Özellikler:</strong></p>
+                <ul>
+                    <li>İnhibitör yapısal olarak substrata <strong>benzer</strong></li>
+                    <li>İnhibitör aktif bölgeye bağlanır</li>
+                    <li><strong>Vmax:</strong> Değişmez (yeterli substrat konsantrasyonunda inhibisyon aşılır)</li>
+                    <li><strong>Km:</strong> Artar (görünürdeki substrat afinitesi azalır)</li>
+                    <li>Yüksek [S] → inhibisyon azalır</li>
+                </ul>
+                
+                <div class="reaction-box">
+                    <strong>Kompetitif İnhibisyon Reaksiyon Şeması:</strong><br><br>
+                    E + S ⇌ ES → E + P (normal reaksiyon)<br>
+                    E + I ⇌ EI (inhibitör kompleksi - katalitik olarak inaktif)<br><br>
+                    
+                    <strong>Km(app):</strong> Km × (1 + [I]/Ki)<br>
+                    <strong>Vmax:</strong> Değişmez
+                </div>
+                
+                <div class="clinical-example">
+                    <h4>🏥 Klinik Örnek: Statin İlaçlar</h4>
+                    <p><strong>HMG-CoA redüktaz inhibitörleri (statinler):</strong> Kolesterol sentezinde anahtar enzim olan HMG-CoA redüktazı kompetitif olarak inhibe ederler.</p>
+                    <p>Statinler (lovastatin, atorvastatin) HMG-CoA'ya yapısal benzerlik gösterir ve enzimin aktif bölgesine bağlanarak kolesterol sentezini azaltır.</p>
+                    <p><strong>Sonuç:</strong> Serum kolesterol seviyesi düşer → kardiyovasküler hastalık riski azalır.</p>
+                </div>
+                
+                <h4>2) Non-kompetitif (Yarışmasız) İnhibisyon</h4>
+                
+                <div class="important-note">
+                    <h4>Non-kompetitif İnhibisyon</h4>
+                    <p>İnhibitör, enzimin <strong>aktif bölge dışında</strong> (allosterik bölge) bir yere bağlanır. İnhibitör hem serbest enzime (E) hem de enzim-substrat kompleksine (ES) bağlanabilir.</p>
+                </div>
+                
+                <p><strong>Karakteristik Özellikler:</strong></p>
+                <ul>
+                    <li>İnhibitör substratla yarışmaz</li>
+                    <li>İnhibitör enzimin konformasyonunu değiştirerek katalizi engeller</li>
+                    <li><strong>Vmax:</strong> Azalır (bazı enzim molekülleri kalıcı olarak inaktif)</li>
+                    <li><strong>Km:</strong> Değişmez (substrat afinitesi değişmez)</li>
+                    <li>[S] artırılarak inhibisyon <strong>aşılamaz</strong></li>
+                </ul>
+                
+                <div class="reaction-box">
+                    <strong>Non-kompetitif İnhibisyon Reaksiyon Şeması:</strong><br><br>
+                    E + S ⇌ ES → E + P<br>
+                    E + I ⇌ EI<br>
+                    ES + I ⇌ ESI (inaktif kompleks)<br><br>
+                    
+                    <strong>Vmax(app):</strong> Vmax / (1 + [I]/Ki)<br>
+                    <strong>Km:</strong> Değişmez
+                </div>
+                
+                <div class="clinical-example">
+                    <h4>🏥 Klinik Örnek: Ağır Metal Zehirlenmesi</h4>
+                    <p><strong>Civa (Hg²⁺) ve Kurşun (Pb²⁺):</strong> Enzimlerin sülfidril gruplarına (-SH) bağlanarak non-kompetitif inhibisyon yaparlar.</p>
+                    <p>Bu ağır metaller enzimlerin aktif bölgesi dışındaki sistein kalıntılarına bağlanır ve enzimin konformasyonunu bozarak aktivitesini engeller.</p>
+                    <p><strong>Tedavi:</strong> Şelatör ajanlar (EDTA, dimercaprol) kullanılarak ağır metaller vücuttan uzaklaştırılır.</p>
+                </div>
+                
+                <h4>3) Unkompetitif İnhibisyon</h4>
+                
+                <div class="important-note">
+                    <h4>Unkompetitif İnhibisyon</h4>
+                    <p>İnhibitör <strong>sadece ES kompleksine</strong> bağlanır, serbest enzime (E) bağlanmaz. Multi-substrat reaksiyonlarında görülür.</p>
+                </div>
+                
+                <p><strong>Karakteristik Özellikler:</strong></p>
+                <ul>
+                    <li>İnhibitör ES kompleksini stabilize eder</li>
+                    <li><strong>Vmax:</strong> Azalır</li>
+                    <li><strong>Km:</strong> Azalır (ES kompleksi daha stabil olur)</li>
+                    <li>Yüksek [S] → inhibisyon <strong>artar</strong> (paradoksal)</li>
+                </ul>
+                
+                <div class="reaction-box">
+                    <strong>Unkompetitif İnhibisyon Reaksiyon Şeması:</strong><br><br>
+                    E + S ⇌ ES → E + P<br>
+                    ES + I ⇌ ESI (inaktif kompleks)<br><br>
+                    
+                    <strong>Vmax(app):</strong> Vmax / (1 + [I]/Ki)<br>
+                    <strong>Km(app):</strong> Km / (1 + [I]/Ki)
+                </div>
+                
+                <h4>4) Miks (Karma) Tip İnhibisyon</h4>
+                
+                <p>Hem E hem de ES kompleksine bağlanır, ancak farklı afinite ile. Kompetitif ve non-kompetitif inhibisyonun özelliklerini birlikte gösterir.</p>
+                
+                <ul>
+                    <li><strong>Vmax:</strong> Azalır</li>
+                    <li><strong>Km:</strong> Artabilir veya azalabilir (inhibitörün E ve ES'e afinitesine bağlı)</li>
+                </ul>
+                
+                <h3>3.3. İnhibisyon Tiplerinin Karşılaştırılması</h3>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>İnhibisyon Tipi</th>
+                            <th>Bağlanma Yeri</th>
+                            <th>Vmax</th>
+                            <th>Km</th>
+                            <th>[S] Etkisi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Kompetitif</strong></td>
+                            <td>Aktif bölge (E ile yarışır)</td>
+                            <td>Değişmez</td>
+                            <td>Artar</td>
+                            <td>Yüksek [S] → inhibisyon azalır</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Non-kompetitif</strong></td>
+                            <td>Allosterik bölge (E ve ES'e)</td>
+                            <td>Azalır</td>
+                            <td>Değişmez</td>
+                            <td>[S] etkisiz</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Unkompetitif</strong></td>
+                            <td>Sadece ES kompleksine</td>
+                            <td>Azalır</td>
+                            <td>Azalır</td>
+                            <td>Yüksek [S] → inhibisyon artar</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Miks</strong></td>
+                            <td>E ve ES'e (farklı afinite)</td>
+                            <td>Azalır</td>
+                            <td>Artabilir/Azalabilir</td>
+                            <td>Değişken</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>3.4. Lineweaver-Burk Grafikleri</h3>
+                
+                <p>Lineweaver-Burk plot (çift-ters plot), Michaelis-Menten eğrisinin lineerleştirilmiş halidir ve inhibisyon tipini belirlemede kullanılır.</p>
+                
+                <div class="reaction-box">
+                    <strong>Lineweaver-Burk Denklemi:</strong><br>
+                    1/V = (Km/Vmax) × (1/[S]) + 1/Vmax<br><br>
+                    
+                    Y ekseni: 1/V<br>
+                    X ekseni: 1/[S]<br>
+                    Eğim: Km/Vmax<br>
+                    Y-kesişim: 1/Vmax<br>
+                    X-kesişim: -1/Km
+                </div>
+                
+                <p><strong>Grafik Yorumları:</strong></p>
+                <ul>
+                    <li><strong>Kompetitif:</strong> Doğrular Y ekseninde kesişir (aynı Vmax), farklı eğim (farklı Km)</li>
+                    <li><strong>Non-kompetitif:</strong> Doğrular X ekseninde kesişir (aynı Km), farklı Y-kesişim (farklı Vmax)</li>
+                    <li><strong>Unkompetitif:</strong> Doğrular paralel (hem Vmax hem Km değişir, oran sabit)</li>
+                </ul>
+                
+                <h3>3.5. Geri Dönüşümsüz İnhibisyon</h3>
+                
+                <div class="important-note">
+                    <h4>Geri Dönüşümsüz İnhibisyon</h4>
+                    <p>İnhibitör enzimle <strong>kovalent bağ</strong> oluşturarak enzimi kalıcı olarak inaktive eder. Enzim aktivitesi ancak yeni enzim sentezi ile geri kazanılır.</p>
+                </div>
+                
+                <p><strong>Mekanizmalar:</strong></p>
+                <ul>
+                    <li><strong>Aktif bölge modifikasyonu:</strong> İnhibitör katalitik amino asitlere kovalent bağlanır</li>
+                    <li><strong>Substrat analogları:</strong> "İntihar substratlar" - enzim tarafından reaktif ara ürüne dönüştürülür ve enzimi inaktive eder</li>
+                    <li><strong>Affinity labeling:</strong> Substrata benzer yapı aktif bölgeye girer ve reaktif grup enzimi modifiye eder</li>
+                </ul>
+                
+                <div class="clinical-example">
+                    <h4>🏥 Klinik Örnek 1: Aspirin (Asetilsalisilk Asit)</h4>
+                    <p><strong>Mekanizma:</strong> Aspirin, siklooksijenaz (COX) enziminin aktif bölgesindeki bir serin kalıntısını <strong>asetilleyerek</strong> geri dönüşümsüz olarak inhibe eder.</p>
+                    <p>COX enzimi prostaglandin sentezinde rol oynar. Aspirin COX-1 ve COX-2'yi inhibe ederek:</p>
+                    <ul>
+                        <li>Ağrı ve enflamasyonu azaltır (COX-2 inhibisyonu)</li>
+                        <li>Trombosit agregasyonunu önler (COX-1 inhibisyonu) → anti-trombotik etki</li>
+                    </ul>
+                </div>
+                
+                <div class="clinical-example">
+                    <h4>🏥 Klinik Örnek 2: Organofosfattlar (Sinir Gazları, Pestisitler)</h4>
+                    <p><strong>Hedef:</strong> Asetilkolinesteraz enzimi</p>
+                    <p><strong>Mekanizma:</strong> Organofosfattlar (sarin, VX, paration) enzimin aktif bölgesindeki serin kalıntısına <strong>fosforilleyerek</strong> geri dönüşümsüz bağlanır.</p>
+                    <p><strong>Sonuç:</strong> Asetilkolin parçalanamaz → sinaps boşluğunda birikiir → sürekli sinir uyarımı → kas spazmı, solunum yetmezliği</p>
+                    <p><strong>Tedavi:</strong> Atropin (muskarinik antagonist) ve pralidoksim (fosfat grubunu enzimden koparır - erken dönemde etkili)</p>
+                </div>
+                
+                <div class="clinical-example">
+                    <h4>🏥 Klinik Örnek 3: Penisilin (Beta-laktam Antibiyotikler)</h4>
+                    <p><strong>Hedef:</strong> Bakteriyel transpeptidaz enzimi (peptidoglikan sentezinde)</p>
+                    <p><strong>Mekanizma:</strong> Penisilin'in beta-laktam halkası açılarak transpeptidazın aktif bölgesindeki serin kalıntısına kovalent bağlanır.</p>
+                    <p><strong>Sonuç:</strong> Bakteri hücre duvarı sentezi durur → bakteriyel liz → bakterinin ölümü</p>
+                    <p><strong>Direnç:</strong> Bazı bakteriler beta-laktamaz enzimi üretir ve penisilin halkasını hidrolize ederek ilacı inaktive eder.</p>
+                </div>
+                
+                <h3>3.6. Allosterik Düzenleme (Ek Bilgi)</h3>
+                
+                <p>Bazı enzimler allosterik bölgelere sahiptir ve bu bölgelere bağlanan moleküllerle aktiviteleri düzenlenir. Allosterik inhibitörler non-kompetitif inhibisyona benzer ancak <strong>fizyolojik düzenleme</strong> amacıyla kullanılır.</p>
+                
+                <ul>
+                    <li><strong>Negatif allosterik düzenleme:</strong> İnhibitör bağlanması → enzim aktivitesi azalır</li>
+                    <li><strong>Pozitif allosterik düzenleme:</strong> Aktivatör bağlanması → enzim aktivitesi artar</li>
+                    <li><strong>Feedback inhibisyon:</strong> Metabolik yolağın son ürünü, yolağın ilk enzimini allosterik olarak inhibe eder</li>
+                </ul>
+                
+                <div class="clinical-example">
+                    <h4>🏥 Klinik Örnek: Fosfofruktokinas (PFK) - Glikoliz Düzenlemesi</h4>
+                    <p><strong>PFK</strong> glikolizin anahtar düzenleme noktasıdır.</p>
+                    <p><strong>Allosterik inhibitörler:</strong> ATP, sitrat (enerji yeterli, glikolizi yavaşlat)</p>
+                    <p><strong>Allosterik aktivatörler:</strong> AMP, ADP, fruktoz-2,6-bisfosfat (enerji gerekli, glikolizi hızlandır)</p>
+                    <p>Bu mekanizma, hücrenin enerji ihtiyacına göre glikolizin hızını dinamik olarak ayarlar.</p>
+                </div>
+                
+            </div>
+            
+            <!-- BONUS: STEROİD HORMONLAR -->
+            <div class="section">
+                <h2>BONUS: Steroid Yapılı Hormonlar</h2>
+                
+                <div class="definition-box">
+                    <strong>Steroid Hormonlar:</strong>
+                    Kolesterolden türeyen, lipid yapılı hormonlardır. Hücre zarından geçerek <strong>nükleer reseptörlere</strong> bağlanır ve gen transkripsiyonunu düzenler.
+                </div>
+                
+                <h3>Steroid Yapısı</h3>
+                <p>Tüm steroidler <strong>18 karbonlu östran (13-metil-steron)</strong> halka sistemine dayanır:</p>
+                <ul>
+                    <li>4 halka: A, B, C, D halkası</li>
+                    <li>Halka A: 6 karbonlu</li>
+                    <li>Halka B, C, D: 5 karbonlu</li>
+                </ul>
+                
+                <h3>Üç Örnek Steroid Yapılı Hormon:</h3>
+                
+                <h4>1) Östradiol (17-β-Östradiol - E₂)</h4>
+                <ul>
+                    <li><strong>Yapı:</strong> A halkası aromatik (benzen halkası), 18 karbon (C18)</li>
+                    <li><strong>Fonksiyon:</strong> Kadın üreme organlarının gelişimi, menstrual siklus düzenlenmesi</li>
+                    <li><strong>Sentez:</strong> Ovaryumlar (granuloza hücreleri), aromataz enzimi ile testosterondan</li>
+                </ul>
+                
+                <h4>2) Testosteron</h4>
+                <ul>
+                    <li><strong>Yapı:</strong> Androstan türevi, 19 karbon (C19), 17. konumda keto grubu</li>
+                    <li><strong>Fonksiyon:</strong> Erkek cinsiyet karakterleri, kas kütlesi artışı, spermatogenez</li>
+                    <li><strong>Sentez:</strong> Testisler (Leydig hücreleri)</li>
+                </ul>
+                
+                <h4>3) Kortizol (Hidrokortizon)</h4>
+                <ul>
+                    <li><strong>Yapı:</strong> Pregnan türevi, 21 karbon (C21), 11-β, 17-α, 21-trihidroksi yapı</li>
+                    <li><strong>Fonksiyon:</strong> Glukoneogenez ↑, anti-inflamatuar, immünsupresif</li>
+                    <li><strong>Sentez:</strong> Adrenal korteks (zona fasikülata)</li>
+                </ul>
+                
+                <div class="tip">
+                    Steroid yapılarını çizerken 17. ve 3. konumlardaki fonksiyonel gruplara (OH, =O) ve halka yapısına dikkat edin. Östradiol'de A halkası <strong>aromatik</strong>tir, bu önemli bir ayırt edici özelliktir.
+                </div>
+                
+            </div>
+            
+            <!-- SINAV İPUÇLARI -->
+            <div class="section" style="border-left: 5px solid #e74c3c;">
+                <h2 style="color: #c0392b; border-bottom: 3px solid #e74c3c;">📝 Sınav İçin Kritik Noktalar</h2>
+                
+                <div class="exam-focus">
+                    <h4>✅ Ksenobiyotik Metabolizması için:</h4>
+                    <ul>
+                        <li>Biyotransformasyon tanımını açıklayın</li>
+                        <li>Faz I ve Faz II reaksiyonlarını ayırt edin</li>
+                        <li>Amino asit konjugasyonu (glisin, glutamin) mekanizmalarını yazın</li>
+                        <li>Fenollü ksenobiyotiklerin glukuronidasyonu ve sülfatlaşmasını açıklayın</li>
+                        <li>PAPS ve UDP-glukuronik asit yapılarını bilin</li>
+                        <li>Glutatyon'un rolünü ve merkaptürik asit oluşumunu anlatın</li>
+                    </ul>
+                </div>
+                
+                <div class="exam-focus">
+                    <h4>✅ Protein Yapısı için:</h4>
+                    <ul>
+                        <li>Dört yapı seviyesini (primer, sekonder, tersiyer, kuaterner) tanımlayın</li>
+                        <li>α-heliks ve β-pleated sheet özelliklerini karşılaştırın</li>
+                        <li>Tersiyer yapıyı stabilize eden kuvvetleri listeleyin</li>
+                        <li>Denatürasyon kavramını ve nedenlerini açıklayın</li>
+                        <li>Hemoglobin örneğini vererek kuaterner yapıyı gösterin</li>
+                    </ul>
+                </div>
+                
+                <div class="exam-focus">
+                    <h4>✅ Enzim İnhibisyonu için:</h4>
+                    <ul>
+                        <li>Kompetitif, non-kompetitif, unkompetitif inhibisyonu <strong>tanımlayın</strong></li>
+                        <li>Her inhibisyon tipinde Vmax ve Km değişimlerini belirtin</li>
+                        <li>Lineweaver-Burk grafiklerini çizin ve yorumlayın</li>
+                        <li>Geri dönüşümlü ve geri dönüşümsüz inhibisyonu ayırt edin</li>
+                        <li>Klinik örnekler verin: aspirin (COX inhibisyonu), statinler, penisilin</li>
+                    </ul>
+                </div>
+                
+                <div class="exam-focus">
+                    <h4>✅ Steroid Hormonlar için:</h4>
+                    <ul>
+                        <li>Üç steroid hormonu <strong>çizin:</strong> Östradiol, Testosteron, Kortizol</li>
+                        <li>18 karbonlu östran yapısını gösterin</li>
+                        <li>Her hormonun fonksiyonunu kısaca belirtin</li>
+                        <li>Aromatik halka (östradiol) özelliğini vurgulayın</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Dr. Ersin Gündeğer - Biyokimya II Ders Notları</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Lehninger Principles of Biochemistry temel alınarak hazırlanmıştır.</p>
+            <p style="font-size: 0.85em; margin-top: 5px; opacity: 0.8;">Başarılar! 🎓</p>
+        </footer>
+    </div>
+</body>
+</html>
